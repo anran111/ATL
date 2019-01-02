@@ -1,0 +1,54 @@
+.el-header, .el-footer {
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+    padding:0 !important;
+  }
+  
+  .custom-parter{
+    height: 40px;
+  }
+  
+  .el-step_main{
+    text-align:center !important
+  }
+  
+  .el-row {
+  margin-bottom: 0px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  }
+  
+  .bg-purple {
+    background: #c73d33;
+  }
+  .grid-content-header {
+    min-height: 40px;
+    max-width: 1400px;
+    margin-left: 70px;
+    border-bottom: 1px dashed #000;
+    text-align: left;
+    width: 1400px;
+    float: left;
+  }
+  .grid-content-middle {
+    min-height: 20px;
+    max-width: 1400px;
+    margin-left: 70px;
+    text-align: left;
+    float: left;
+    margin: 10px 0, 10px, 0;
+    font-size: 14px;
+  }
+  .tablestyle {
+    width: 100%;
+    max-height: 350;
+    background: white(214, 64, 64);
+    border:1px solid #999595; 
+  }
+  
+  .el-dialog__header {
+    background:#c73d33;
+    text-align: left;
+  }

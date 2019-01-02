@@ -1,0 +1,85 @@
+.el-header, .el-footer {
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+  padding:0 !important;
+}
+
+.custom-parter{
+  height: 40px;
+}
+
+.el-step_main{
+  text-align:center !important
+}
+
+.el-row {
+margin-bottom: 0px;
+&:last-child {
+  margin-bottom: 0;
+}
+}
+
+.bg-purple {
+  background: #c73d33;
+}
+.grid-content {
+  min-height: 200px;
+  max-width: 400px;
+  margin-left: 70px;
+}
+
+.el-tree {
+  min-height:300px;
+  background: white(187, 57, 57);
+  border:2px solid #999595;
+}
+
+.el-checkbox-group {
+  height:300px;
+  width:100%;
+  background: white(187, 57, 57);
+  border:2px solid #999595;
+}
+
+.year-search {
+  margin-left: 0px;
+  margin-right: 130px;
+  float: right;
+  padding: 1.5px;
+}
+
+.year-search:hover{
+  color:#c73d33;
+}
+
+.el-tree-node:focus>.el-tree-node__content, .el-tree-node__content:hover{
+  background-color:#c73d33;
+  color:#c73d33;
+}
+
+.tablestyle {
+  width: 100%;
+  max-height: 350;
+  background: white(214, 64, 64);
+  border:2px solid #999595; 
+}
+
+#yearSearch {
+  margin-left: 100px;
+  height:300px;
+  line-height:30px;
+  overflow-y: auto;
+  border:2px solid #888888;
+}
+.el-button:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #adadad;
+}
+
+.el-button--success:hover {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #adadad;
+}

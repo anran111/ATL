@@ -1,0 +1,29 @@
+.el-header, .el-footer {
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+    padding:0 !important;
+  }
+  
+  .custom-parter{
+    height: 40px;
+  }
+  
+  .el-step_main{
+    text-align:center !important
+  }
+  
+  .el-row {
+  margin-bottom: 0px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  }
+
+  .tablestyle {
+    width: 100%;
+    max-height: 350;
+    background: white(214, 64, 64);
+    border:1px solid #999595; 
+  }
+  

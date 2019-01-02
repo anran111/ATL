@@ -1,0 +1,64 @@
+$bg:#2d3a4b;
+$light_gray:#eee;
+
+  .el-form-item__error {
+    left: 55px;
+  }
+  .el-input {
+    display: inline-block;
+    height: 47px;
+    width: 85%;
+    input {
+      background: transparent;
+      background-color: white;
+      border-width: 0px 0px 1px 0px;
+      border-bottom-color: darkgrey;
+      -webkit-appearance: none;
+      border-radius: 0px;
+      padding: 12px 5px 12px 15px;
+      color: #1f2d3d;
+      height: 47px;
+      &:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px white inset !important;
+        -webkit-text-fill-color: #1f2d3d !important;
+      }
+    }
+  }
+  input-disabled {
+      background: transparent;
+      background-color: white;
+      border-width: 0px 0px 1px 0px;
+      border-bottom-color: darkgrey;
+      -webkit-appearance: none;
+      border-radius: 0px;
+      padding: 12px 5px 12px 15px;
+      color: #c0c4cc;
+      height: 47px;
+      &:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px white inset !important;
+        -webkit-text-fill-color: #1f2d3d !important;
+      }
+    }
+  .el-button{
+    border: 0px;
+    background-color: #c73d33;
+  }
+
+.login-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.contact_label {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: normal !important;
+  color: #545454;
+  text-align: right;
+  font-weight: 400;
+  font-size: x-large;
+  float: left;
+  width: 200px;
+  padding-right: 10px; 
+}
