@@ -72,14 +72,7 @@ margin-bottom: 0px;
   overflow-y: auto;
   border:2px solid #888888;
 }
-.el-button:hover {
-  background-color: #e6e6e6;
-  border-color: #adadad;
-  color: #adadad;
-}
-
-.el-button--success:hover {
-  background-color: #e6e6e6;
-  border-color: #adadad;
-  color: #adadad;
+.el-button {
+  border: 0px;
+  background-color:#c73d33;
 }

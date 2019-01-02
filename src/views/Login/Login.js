@@ -68,6 +68,13 @@ export default {
     },
     handleRegister() {
       this.$router.push('/register');
-    }
+    },
+    showPwd() {
+      if (this.pwdType === "password") {
+        this.pwdType = "";
+      } else {
+        this.pwdType = "password";
+      }
+    },
   }
 }

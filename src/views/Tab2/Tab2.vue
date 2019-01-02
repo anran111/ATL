@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <el-container>
             <el-header>
                 <NavMenu activeIndex="2"></NavMenu>
@@ -28,10 +28,10 @@
                     <el-col :xs="4" :sm="6" :md="3" :lg="3" :xl="3" style="float:left;">
                     <el-span>購入金額：￥{{money}}</el-span></el-col>
                     <el-col :xs="8" :sm="6" :md="4" :lg="2" :xl="1">
-                        <el-button type="success" style="background:#c73d33;border:#c73d33" v-on:click="buyData">購入</el-button>
+                        <el-button type="danger" v-on:click="buyData">購入</el-button>
                     </el-col>
                     <el-col :xs="8" :sm="6" :md="4" :lg="1" :xl="1">
-                        <el-button type="success" style="background:#c73d33;border:#c73d33" v-on:click="back">戻る</el-button>
+                        <el-button type="danger"  v-on:click="back">戻る</el-button>
                     </el-col>
                 </el-row>
                 <el-dialog
@@ -41,7 +41,7 @@
                 <span>決済確認中です。</span></br></br>
                 <span>決済完了したら、購入履歴からファイルをダウンロードできます。</span>
                 <span slot="footer" class="dialog-footer">
-                    <el-button type="primary" @click="buyHistryShow"  style="background:#c73d33;border:#c73d33">購入履歴へ</el-button>
+                    <el-button type="danger" @click="buyHistryShow"  >購入履歴へ</el-button>
                 </span>
                 </el-dialog>
                 
@@ -148,4 +148,11 @@
 @import "./Tab2.scss";
 </style>
 
+<style rel="stylesheet/scss" lang="scss">
+.container {
+  .el-button {
+    background-color:#c73d33;
+  }
+}
+</style>
 <script src="./Tab2.js"></script> 

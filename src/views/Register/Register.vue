@@ -1,11 +1,11 @@
 <template>
 
-  <div class="login-container">
+  <div class="container">
     <el-header>
       <NavMenu activeIndex="1"></NavMenu>
     </el-header>
-    <img src="../../assets/images/logo.png" style="width:300px"/>
-     <h3 class="title" style="text-align: left; width: 40%;border-bottom: solid;margin-top:5%">個人情報</h3>
+    <img src="../../assets/images/logo.png" style="margin:25px 0 25px 0;width:230px;height:140px"/>
+     <h3 class="title" style="text-align: left; width: 40%;border-bottom: solid;margin-left:30%">個人情報</h3>
       <div style="width:40%;margin-left:30%">
           <el-row>
             <label class="contact_label">お名前</label>
@@ -48,7 +48,7 @@
             <el-input name="country"  type="text"  v-model="country" autoComplete="on" style="margin-left:30px;width:330px;float:left"/>
           </el-row>
       </div>
-      <h3 class="title" style="text-align: left; width: 40%;border-bottom: solid;margin-top:20px">請求先情報</h3>
+      <h3 class="title" style="text-align: left; width: 40%;border-bottom: solid;margin-top:20px;margin-left:30%">請求先情報</h3>
       <div style="width:40%;margin-left:30%">
           <el-row>
             <label class="contact_label" >請求先名</label>
@@ -63,7 +63,7 @@
             <el-input name="postCode"  type="text"  v-model="postCode" autoComplete="on" style="margin-left:30px;width:330px;float:left"/>
           </el-row>
       </div>
-      <h3 class="title" style="text-align: left; width: 40%;border-bottom: solid;margin-top:20px">支払情報（クレジットカードのみ）</h3>
+      <h3 class="title" style="text-align: left; width: 40%;border-bottom: solid;margin-top:20px;margin-left:30%">支払情報（クレジットカードのみ）</h3>
       <div style="width:40%;margin-left:30%">
           <el-row>
             <label class="contact_label" >カード番号</label>
@@ -87,7 +87,7 @@
       </div>
       <div style="width:40%;margin-left:30%;margin-top:20px;height:60px">
           <el-row>
-            <el-button type="primary" @click.native.prevent="handleResigter" style="background:#c73d33;border:#c73d33" >
+            <el-button type="danger" @click.native.prevent="handleResigter" style="width:100%" >
             登録
             </el-button>
          </el-row>
@@ -98,6 +98,15 @@
 
 <style>
 @import "./Register.scss";
+</style>
+
+<style rel="stylesheet/scss" lang="scss">
+.container {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  .el-button {
+    background-color:#c73d33;
+  }
+}
 </style>
 
 <script src="./Register.js"></script> 

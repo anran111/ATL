@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <el-container>
             <el-header>
                 <NavMenu activeIndex="2"></NavMenu>
@@ -14,7 +14,7 @@
                             <div style="margin-left: 100px;">
                             <span>
                                 <H4 style="margin-top:-15px;float:left">指標選択</H4>
-                                <el-button type="success" style="margin-top:-5px;background:#c73d33;border:#c73d33;float:right;margin-right:30px" v-on:click="resetTargetChecked">条件クリア</el-button>
+                                <el-button type="danger" style="margin-top:-5px;float:right;margin-right:30px" v-on:click="resetTargetChecked">条件クリア</el-button>
                             </span>
                             </div>
                             </el-row>
@@ -42,7 +42,7 @@
                             <div style="margin-left: 100px;">
                                 <span>
                                     <H4 style="margin-top:-15px;float:left">国選択</H4>
-                                    <el-button type="success" style="margin-top:-5px;background:#c73d33;border:#c73d33;float:right;margin-right:30px" v-on:click="resetCountryChecked">条件クリア</el-button>
+                                    <el-button type="danger" style="margin-top:-5px;float:right;margin-right:30px" v-on:click="resetCountryChecked">条件クリア</el-button>
                                 </span>
                             </div>
                         </el-row>
@@ -71,7 +71,7 @@
                                 <div style="margin-left: 100px;">
                                     <span>
                                         <H4 style="margin-top:-15px;float:left">業界選択</H4>
-                                        <el-button type="success" style="margin-top:-5px;background:#c73d33;border:#c73d33;float:right;margin-right:30px" v-on:click="resetCategoryChecked">条件クリア</el-button>
+                                        <el-button type="danger" style="margin-top:-5px;float:right;margin-right:30px" v-on:click="resetCategoryChecked">条件クリア</el-button>
                                     </span>
                                 </div>
                             </el-row>
@@ -95,7 +95,7 @@
                                 <div style="margin-left: 100px;">
                                     <span>
                                         <H4 style="margin-top:-15px;float:left;">年分選択</H4>
-                                        <el-button type="success" style="margin-top:-5px;background:#c73d33;border:#c73d33;float:right;margin-right:20px" v-on:click="resetYearChecked">条件クリア</el-button>
+                                        <el-button type="danger" style="margin-top:-5px;float:right;margin-right:20px" v-on:click="resetYearChecked">条件クリア</el-button>
                                     </span>
                                 </div>
                             </el-row>
@@ -120,18 +120,18 @@
             <el-col :xs="4" :sm="6" :md="3" :lg="3" :xl="11">
             <el-span>購入金額：￥{{money}}</el-span></el-col>
             <el-col :xs="8" :sm="6" :md="3" :lg="2" :xl="1" style="margin-left:118px">
-            <el-button type="success" style="background:#c73d33;border:#c73d33" icon="el-icon-search" v-on:click="search">検索</el-button>
+            <el-button type="danger"  icon="el-icon-search" v-on:click="search">検索</el-button>
             </el-col>
             <el-col :xs="8" :sm="6" :md="4" :lg="2" :xl="1">
-            <el-button type="success" style="background:#c73d33;border:#c73d33" v-on:click="buy">購入確認</el-button>
+            <el-button type="danger"  v-on:click="buy">購入確認</el-button>
             </el-col>
             </el-row>
             <el-row :gutter="10" v-if="searchFlg === 'false'">
             <el-col :xs="8" :sm="6" :md="3" :lg="2" :xl="1" style="margin-left:1235px">
-            <el-button type="success" style="background:#c73d33;border:#c73d33" icon="el-icon-search" v-on:click="search">検索</el-button>
+            <el-button type="danger"  icon="el-icon-search" v-on:click="search">検索</el-button>
             </el-col>
             <el-col :xs="8" :sm="6" :md="4" :lg="2" :xl="1">
-            <el-button type="success" style="background:#c73d33;border:#c73d33" v-on:click="buy">購入確認</el-button>
+            <el-button type="danger"  v-on:click="buy">購入確認</el-button>
             </el-col>
             </el-row>
             </el-main>
@@ -236,6 +236,14 @@
 
 <style>
 @import "./Tab1.scss";
+</style>
+
+<style rel="stylesheet/scss" lang="scss">
+.container {
+  .el-button {
+    background-color:#c73d33;
+  }
+}
 </style>
 
 <script src="./Tab1.js"></script> 

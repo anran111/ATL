@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <el-container>
             <el-header>
                 <NavMenu activeIndex="2"></NavMenu>
@@ -64,7 +64,7 @@
                                 <el-button disabled
                                 @click.native.prevent="deleteRow(scope.$index, buyHistoryData)"
                                 size="small" 
-                                type="success" style="background:#888888;border:#c73d33;opacity:0.5;">
+                                type="danger" style="background:#888888;border:#c73d33;opacity:0.5;">
                                 発行
                                 </el-button>
                             </div>
@@ -72,7 +72,7 @@
                                 <el-button 
                                 @click.native.prevent="deleteRow(scope.$index, buyHistoryData)"
                                 size="small" 
-                                type="success" style="background:#c73d33;border:#c73d33">
+                                type="danger" >
                                 発行
                                 </el-button>
                             </div>
@@ -87,7 +87,7 @@
                                 <el-button disabled
                                 @click.native.prevent="fileDownload(scope.$index, buyHistoryData)"
                                 size="small" 
-                                type="success" style="background:#888888;border:#c73d33;opacity:0.5;">
+                                type="danger" style="background:#888888;border:#c73d33;opacity:0.5;">
                                 ダウンロード
                                 </el-button>
                             </div>
@@ -95,7 +95,7 @@
                                 <el-button
                                 @click.native.prevent="fileDownload(scope.$index, buyHistoryData)"
                                 size="small" 
-                                type="success" style="background:#c73d33;border:#c73d33">
+                                type="danger" >
                                 ダウンロード
                                 </el-button>
                             </div>
@@ -112,4 +112,11 @@
 @import "./Tab3.scss";
 </style>
 
+<style rel="stylesheet/scss" lang="scss">
+.container {
+  .el-button {
+    background-color:#c73d33;
+  }
+}
+</style>
 <script src="./Tab3.js"></script> 
